@@ -1,5 +1,9 @@
 const container = document.getElementById("container");
 const colorPick = document.getElementById("choosecolor");
+const squares = document.getElementsByClassName("grid-item");
+const fade = document.getElementById("fadeButton");
+const fadeOn = document.getElementById("on");
+const fadeOff = document.getElementById("off");
 
 /*
 const randomColor = () => {
@@ -14,13 +18,22 @@ function makeRows(rows, cols) {
   for (i = 0; i < (rows * cols); i++) {
     let cell = document.createElement("div");
     cell.style.overflow = "hidden";
-    cell.style.opacity = "1";
     cell.style.width = 560 / cols - 2 + "px";
     container.appendChild(cell).className = "grid-item";
     cell.addEventListener('mouseover', function() {
         cell.style.backgroundColor = changeColor();
         cell.style.opacity = parseFloat(cell.style.opacity) + 0.10;
     });
+    fadeOn.addEventListener("click", function() {
+      cell.style.opacity = 0.1;
+      fadeOff.style.backgroundColor = "white";
+      fadeOn.style.backgroundColor = "lime";
+    })
+    fadeOff.addEventListener("click", function() {
+      cell.style.opacity = 1;
+      fadeOn.style.backgroundColor = "white";
+      fadeOff.style.backgroundColor = "lime";
+    })
   };
 };
 
@@ -34,6 +47,7 @@ const changeColor = () => {
     newColor = colorPick.value;
     return newColor;
 }
+
 
 
 
