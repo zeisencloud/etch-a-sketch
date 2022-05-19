@@ -7,9 +7,10 @@
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
+    padding: 5px;
     width: 560px;
     height: 560px;
-    margin: 0 auto;
+    margin: 15px auto;
     border: 2px blueviolet solid;
   }
   
@@ -20,15 +21,9 @@
 
   #sides {
     margin-top: 10px;
-    margin-bottom: 20px;
     overflow: hidden;
   }
 
-  #fadeModeDiv {
-    padding: 120px;
-    position: relative;
-    bottom: 15px;
-  }
   #fadeButton {
     pointer-events: none;
   }
