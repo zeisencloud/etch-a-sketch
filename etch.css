@@ -1,0 +1,25 @@
+:root {
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 560px;
+    height: 560px;
+    margin: 0 auto;
+    border: 2px blueviolet solid;
+  }
+  
+  .grid-item {
+    border: 1px solid rgb(0, 0, 0);
+
+  }
+
+  #sides {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
