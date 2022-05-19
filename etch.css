@@ -27,6 +27,13 @@
   #fadeButton {
     pointer-events: none;
   }
+  /* Buttons On/Off */
+  #offRain {
+    background-color: lime;
+  }
+  #off {
+    background-color: lime;
+  }
 
 
   /* The switch - the box around the slider */
